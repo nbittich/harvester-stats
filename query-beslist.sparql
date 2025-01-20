@@ -1,0 +1,20 @@
+SELECT (count (distinct ?ap) as ?agendaCount) ?municipality
+WHERE {
+  OPTIONAL {
+    ?ap ^<http://data.vlaanderen.be/ns/besluit#behandelt> ?bh.
+    ?bh <http://data.vlaanderen.be/ns/besluit#isGehoudenDoor> ?gd.
+
+    {
+      ?gd <http://data.vlaanderen.be/ns/besluit#bestuurt> ?bt.
+      ?bt <http://data.vlaanderen.be/ns/besluit#werkingsgebied> ?abstractLocation.
+      ?abstractLocation <http://www.w3.org/2000/01/rdf-schema#label> ?abstractLocationLabel.
+    } UNION {
+      ?gd <http://data.vlaanderen.be/ns/mandaat#isTijdspecialisatieVan> ?tijd.
+      ?tijd <http://data.vlaanderen.be/ns/besluit#bestuurt> ?bt.
+      ?bt <http://data.vlaanderen.be/ns/besluit#werkingsgebied> ?location.
+      ?location <http://www.w3.org/2000/01/rdf-schema#label> ?locationLabel.
+    }
+
+    BIND(COALESCE(?abstractLocationLabel, ?locationLabel) AS ?municipality)
+  }
+} group by (?municipality) order by DESC(?agendaCount)

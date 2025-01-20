@@ -1,0 +1,16 @@
+select distinct ?name ?url ?cronExpr  where {
+ 
+?rdo  <http://www.semanticdesktop.org/ontologies/2007/01/19/nie#url> ?url;
+                                                                      a <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#RemoteDataObject>.
+
+  	
+	?harvestingContainer  	<http://purl.org/dc/terms/hasPart> ?rdo.
+       ?dataContainer <http://redpencil.data.gift/vocabularies/tasks/hasHarvestingCollection> ?harvestingContainer.
+                      ?scheduledTask <http://redpencil.data.gift/vocabularies/tasks/inputContainer>  ?dataContainer;
+                                     a <http://redpencil.data.gift/vocabularies/tasks/ScheduledTask>;
+                                     <http://purl.org/dc/terms/isPartOf> ?scheduledJob.
+         								?scheduledJob a <http://vocab.deri.ie/cogs#ScheduledJob>;
+                                     <http://purl.org/dc/terms/title> ?name.
+  ?scheduledJob <http://redpencil.data.gift/vocabularies/tasks/schedule>/<http://schema.org/repeatFrequency> ?cronExpr
+  
+}
