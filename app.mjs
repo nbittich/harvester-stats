@@ -8,9 +8,10 @@ enrich(sj, "prodbeslist.csv", "inProd");
 enrich(sj, "catchup-server.csv", "inCatchupServer");
 
 
-const out = [`"citName","targetUrl","harvestedIn","inProd","inCatchup"`];
+const out = [`"citName","targetUrl","harvestedIn","inProd","inCatchup","delta"`];
 for (const s of sj) {
-    out.push(`"${s.name}","${s.targetUrl}",${s.server},${s.inProd ? s.inProd : 'N/A'},${s.inCatchupServer ? s.inCatchupServer : 'N/A'}`);
+    let delta = (s.inCatchupServer || 0) - (s.inProd || 0);
+    out.push(`"${s.name}","${s.targetUrl}",${s.server},${s.inProd ? s.inProd : 'N/A'},${s.inCatchupServer ? s.inCatchupServer : 'N/A'},${delta}`);
 }
 
 
