@@ -10,7 +10,7 @@ enrich(sj, "catchup-server.csv", "inCatchupServer");
 
 const out = [`"citName","targetUrl","harvestedIn","inProd","inCatchup"`];
 for (const s of sj) {
-    out.push(`"${s.name}","${s.targetUrl}",${s.server},${s.inProd},${s.inCatchupServer}`);
+    out.push(`"${s.name}","${s.targetUrl}",${s.server},${s.inProd ? s.inProd : 'N/A'},${s.inCatchupServer ? s.inCatchupServer : 'N/A'}`);
 }
 
 
@@ -42,23 +42,6 @@ function enrich(sj, filename, keyCount) {
         sj[idx][keyCount] = parseInt(count);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function toJson(filename) {
