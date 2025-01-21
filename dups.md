@@ -310,3 +310,9 @@
 <https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	ns1:geplandOpenbaar	"true"^^xsd:boolean ;
 	dcterms:description	"1. Goedkeuring notulen vorige vergadering\u00A0" .
 ```
+
+**Conclusion:**
+
+- because they use relative urls in their html, we fallback to the default base url (above, since we use rdfa.info/play, the base is stable)
+- our rdfa extraction library use the target url as base for fallback
+- because a segment of the url is dynamic, we end up producing the data twice.
