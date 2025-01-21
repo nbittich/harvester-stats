@@ -1,6 +1,6 @@
 - Because we have so many files, it can take several minutes just to ls the /data folder.
 
-  - One folder per job / one folder per step.
+  - One folder per job / one subfolder per step.
 
 - We produce a lot of metadata for each step that we end up deleting anyway during the cleaning step.
 
