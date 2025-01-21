@@ -1,4 +1,4 @@
-- Because we have so many files, it can take several minutes just to ls the /data folder.
+- Because we have so many files, it can take several minutes just to `ls` the `/data` folder.
 
   - One folder per job / one subfolder per step.
 
@@ -7,7 +7,7 @@
   - For each step, have a simple manifest file that contains everything needed for the next step.
   - Each line in the manifest represents one subtask (URL) processed.
   - The manifest could have the following properties:
-  - <url-processed> <created-date> <modified-date> <status> <statusMessage> <outputFilePath>
+    - `<url-processed> <created-date> <modified-date> <status> <statusMessage> <outputFilePath>`
   - The manifest could also provide a clear status message for each URL processed.
 
 - The cleanup job is too complex.
