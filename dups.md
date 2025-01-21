@@ -274,3 +274,39 @@
                                             """ .
 
 ```
+
+**Data published for the first link:**
+
+```ttl
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://data.vlaanderen.be/ns/besluit#> .
+<https://boechout.meetingburger.net/(S(lryzfgt12ph4vwqll5d32bzc))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	rdf:type	ns1:Agendapunt .
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<https://boechout.meetingburger.net/(S(lryzfgt12ph4vwqll5d32bzc))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	ns2:uuid	"3d4a4900-7122-11ef-8607-a992b50ba983" .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+<https://boechout.meetingburger.net/(S(lryzfgt12ph4vwqll5d32bzc))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	dcterms:title	"1. Goedkeuring notulen vorige vergadering\u00A0 " .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+@prefix ns5:	<https://boechout.meetingburger.net/(S(lryzfgt12ph4vwqll5d32bzc))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/> .
+<https://boechout.meetingburger.net/(S(lryzfgt12ph4vwqll5d32bzc))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	prov:wasDerivedFrom	ns5:besluitenlijst .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+<https://boechout.meetingburger.net/(S(lryzfgt12ph4vwqll5d32bzc))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	ns1:geplandOpenbaar	"true"^^xsd:boolean ;
+	dcterms:description	"1. Goedkeuring notulen vorige vergadering\u00A0" .
+```
+
+**Data published for the second link:**
+
+```ttl
+@prefix rdf:	<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns1:	<http://data.vlaanderen.be/ns/besluit#> .
+<https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	rdf:type	ns1:Agendapunt .
+@prefix ns2:	<http://mu.semte.ch/vocabularies/core/> .
+<https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	ns2:uuid	"3bcd3510-7537-11ef-8607-a992b50ba983" .
+@prefix dcterms:	<http://purl.org/dc/terms/> .
+<https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	dcterms:title	"1. Goedkeuring notulen vorige vergadering\u00A0 " .
+@prefix prov:	<http://www.w3.org/ns/prov#> .
+@prefix ns5:	<https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/> .
+<https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	prov:wasDerivedFrom	ns5:besluitenlijst .
+@prefix xsd:	<http://www.w3.org/2001/XMLSchema#> .
+<https://boechout.meetingburger.net/(S(iaqu0emijowgjh3q2btvzj4y))/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f/boechout.meetingburger.net/vabu/5d06e83d-a498-45cd-af4a-01ebf870762f#76b10c72-c076-4b4e-af3b-6208135c36d4>	ns1:geplandOpenbaar	"true"^^xsd:boolean ;
+	dcterms:description	"1. Goedkeuring notulen vorige vergadering\u00A0" .
+```
