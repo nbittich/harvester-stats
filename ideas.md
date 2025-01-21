@@ -29,7 +29,7 @@
     - Provide all the current jobs with a status set to success.
     - Provide the three files mentioned above.
     - Consume the intersect file and the new insert files.
-    - The delta sync is simply:
+  - The delta sync is simply:
     - Provide all the current jobs with a status set to success that haven’t been consumed yet.
     - Provide the three files mentioned above.
     - Consume the to-remove files and the new insert files.
