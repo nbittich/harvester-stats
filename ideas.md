@@ -37,4 +37,4 @@
 - Frontend improvements:
 
   - When we delete a job in the frontend, we don’t delete the files and the metadata linked to it, leading to orphan files that take up space on disk.
-  - It’s hard to investigate a problem on a specific (sub)URL without having to make different SPARQL queries just to figure out where the files I’m interested in are (having more filters could help).
+  - It’s hard to investigate a problem on a specific (sub)url without having to make different sparql queries just to figure out where the files I’m interested in are (having more filters could help).
