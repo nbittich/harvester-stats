@@ -19,9 +19,9 @@
 - The syncing is complex.
 
   - We already produce everything needed for the sync during the diff step based on the previous job:
-    a. One file that contains the new triples.
-    b. One file that contains the removed triples.
-    c. One file that contains the unchanged triples (intersect file).
+    - One file that contains the new triples.
+    - One file that contains the removed triples.
+    - One file that contains the unchanged triples (intersect file).
   - These three files are plain N-Triples.
   - We use them during the publish step.
   - We can drop the gen-delta service.
